@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: testpod1
+ lebels:
+   app: my-app
+spec:
+  containers: 
+-   name: c00
+    image: ubuntu
+    common: ["/bin/bash, "-c " while true; do echo network-globe; sleep 5 done"]
+
+-   name: c01
+    image: ubuntu
+    common: ["/bin/bash, "-c " while true; do echo Hello-Pankaj; sleep 5 done"]
+    
